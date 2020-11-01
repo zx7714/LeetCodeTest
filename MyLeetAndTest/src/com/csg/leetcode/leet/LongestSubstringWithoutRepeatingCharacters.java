@@ -1,4 +1,4 @@
-package com.csg.leetcode;
+package com.csg.leetcode.leet;
 
 import java.util.HashMap;
 /** 无重复最长字符串
