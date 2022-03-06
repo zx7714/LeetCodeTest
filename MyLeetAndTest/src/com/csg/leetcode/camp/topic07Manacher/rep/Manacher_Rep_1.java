@@ -48,7 +48,7 @@ public class Manacher_Rep_1 {
 		return newChar;
 	}
 	public static void main(String[] args) {
-		String str = "babad";
+		String str = "bdabad";
 		System.out.println(manacher(str));
 	}
 }

@@ -17,6 +17,8 @@ public class Kmp {
 		
 		int x = 0;
 		int y = 0;
+		// A  A A A B
+		//[-1 0 1 2 3]
 		while(x < s.length && y < m.length){
 			//x、y位置的字符串匹配上了
 			if(s[x] == m[y]){
@@ -43,11 +45,12 @@ public class Kmp {
 		// cn代表，cn位置的字符，是当前和i-1位置比较的字符;也代表某个字符前缀和后缀最长的相同长度。
 		int cn = 0;
 		int i = 2;
+		// A A A B
 		while(i < next.length){
 			if(m[i-1] == m[cn]){
 				next[i++] = ++cn;
 			}else if(cn > 0){
-				cn = next[cn]; // 相比较的字符不同，但是还没到0位置，往前跳
+				cn = next[cn]; // 相比较的字符不同， ，往前跳
 			}else{
 				next[i++] = 0;
 			}
