@@ -45,19 +45,7 @@ public class N14_LCSubstring {
 				row++;
 			}
 		}
-		
-		CompletableFuture<String> cp = CompletableFuture.supplyAsync(() ->{
-			return "123";
-		});
-		try {
-			String string = cp.get();
-			System.out.println(string);
-		} catch (InterruptedException | ExecutionException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		
+
 		return s1.substring(end - max + 1, end + 1);
 	}
 	public static void main(String[] args) {

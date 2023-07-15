@@ -59,7 +59,7 @@ public class Kmp {
 	}
 	public static void main(String[] args) {
 		String str1 = "1231231234445";
-		String str2 = "12344451";
+		String str2 = "1234445";
 		System.out.println(kmp(str1, str2));
 	}
 }
